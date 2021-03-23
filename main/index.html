@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link id="codyframe" rel="stylesheet" href="assets/css/style.css">
+  <!-- Uncomment the script below if you need to support browsers where CSS Variables have not been implemented (e.g., IE11) -->
+  <!-- <script>
+    if(!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) {var cfStyle = document.getElementById('codyframe');if(cfStyle) {var href = cfStyle.getAttribute('href');href = href.replace('style.css', 'style-fallback.css');cfStyle.setAttribute('href', href);}}
+  </script> -->
+  <title>Get Started | CodyFrame</title>
+</head>
+<body>
+  <!--PRODUCT V2 START-->
+  <section class="product-v2 js-product-v2">
+    <div class="grid gap-md">
+      <div class="col-6@md col-7@lg min-width-0">
+        <div class="thumbslide js-thumbslide">
+          <div class="slideshow js-product-v2__slideshow slideshow--transition-slide slideshow--ratio-1:1" data-control="hover">
+            <p class="sr-only">Slideshow Items</p>
+            
+            <ul class="slideshow__content">
+              <li class="slideshow__item bg js-slideshow__item slideshow__item--selected" data-thumb="../../../app/assets/img/product-v2-img-1.jpg" id="item-Black">
+                <figure class="position-absolute height-100% width-100% top-0 left-0">
+                  <div class="img-mag height-100% js-img-mag">
+                    <img class="img-mag__asset height-100% object-cover js-img-mag__asset" src="assets/img/meat.jpg" alt="Image description">
+                  </div>
+                </figure>
+              </li>
+        
+              <li class="slideshow__item bg js-slideshow__item" data-thumb="../../../app/assets/img/product-v2-img-2.jpg" id="item-White">
+                <figure class="position-absolute height-100% width-100% top-0 left-0">
+                  <div class="img-mag height-100% js-img-mag">
+                    <img class="img-mag__asset height-100% object-cover js-img-mag__asset" src="assets/img/meat1.jpg" alt="Image description">
+                  </div>
+                </figure>
+              </li>
+        
+              <li class="slideshow__item bg js-slideshow__item" data-thumb="../../../app/assets/img/product-v2-img-3.jpg" id="item-Red">
+                <figure class="position-absolute height-100% width-100% top-0 left-0">
+                  <div class="img-mag height-100% js-img-mag">
+                    <img class="img-mag__asset height-100% object-cover js-img-mag__asset" src="assets/img/meat1.jpg" alt="Image description">
+                  </div>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        
+          <div class="thumbslide__nav-wrapper" aria-hidden="true">
+            <nav class="thumbslide__nav"> 
+              <ol class="thumbslide__nav-list">
+                <!-- this content will be created using JavaScript -->
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-6@md col-5@lg">
+        <div class="margin-bottom-sm">
+          <nav class="breadcrumbs text-sm" aria-label="Breadcrumbs">
+            <ol class="flex flex-wrap gap-xxs">
+              <li class="breadcrumbs__item">
+                <a href="#0" class="color-inherit">Home</a>
+                <span class="color-contrast-low margin-left-xxs" aria-hidden="true">/</span>
+              </li>
+      
+              <li class="breadcrumbs__item">
+                <a href="#0" class="color-inherit">Boat</a>
+                <span class="color-contrast-low margin-left-xxs" aria-hidden="true">/</span>
+              </li>
+      
+              <li class="breadcrumbs__item" aria-current="page">Product 01</li>
+            </ol>
+          </nav>
+        </div>
+  
+        <div class="text-component v-space-xs margin-bottom-md">
+          <h1>Product Name</h1>
+          <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellendus autem quas.</p>
+        </div>
+  
+        <div class="margin-bottom-sm">
+          <fieldset class="color-swatches  js-color-swatches">
+            <legend class="color-swatches__legend text-sm color-contrast-medium margin-bottom-xs" aria-live="polite" aria-atomic="true">Our Options<span class="color-swatches__color color-contrast-high js-color-swatches__color"></span></legend>
+  
+            <select class="js-color-swatches__select" aria-label="Select a color">
+              <option value="Black" data-style="background-color: #0D0E11;"></option>
+              <option value="White" data-style="background-color: #FFFFFF;"></option>
+              <option value="Red" data-style="background-color: #9C2822;"></option>
+              
+            </select>
+          </fieldset>
+        </div>
+  
+        <div class="margin-bottom-md">
+          <p class="text-sm color-contrast-medium margin-bottom-xs">Weight</p>
+          
+          <div class="btns gap-xxs btns--radio text-sm@md">
+            <div>
+              <input type="radio" name="sizeBtns" id="sizeBtnsS" checked>
+              <label class="btns__btn" for="sizeBtnsS">00.0 lbs</label>
+            </div>
+          
+            <div>
+              <input type="radio" name="sizeBtns" id="sizeBtnsM">
+              <label class="btns__btn" for="sizeBtnsM">00.0 lbs</label>
+            </div>
+  
+            <div>
+              <input type="radio" name="sizeBtns" id="sizeBtnsL">
+              <label class="btns__btn" for="sizeBtnsL">00.0 lbs</label>
+            </div>
+  
+            <div>
+              <input type="radio" name="sizeBtns" id="sizeBtnsXL" disabled>
+              <label class="btns__btn btns__btn--disabled" for="sizeBtnsXL">00.0 lbs</label>
+            </div>
+          </div>
+        </div>
+  
+        <div class="margin-bottom-md">
+          <div class="flex flex-column flex-row@sm gap-xxs">
+            <button class="btn btn--primary flex-grow">Send to My Home</button>
+            <button class="btn btn--subtle">
+              <span class="margin-right-xxs hide@sm">Add to wish list</span>
+              <svg class="icon icon--xs" viewBox="0 0 16 16"><title>Add to wish list</title><path  stroke-width="1" stroke="currentColor" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M14.328,2.672 c-1.562-1.562-4.095-1.562-5.657,0C8.391,2.952,8.18,3.27,8,3.601c-0.18-0.331-0.391-0.65-0.672-0.93 c-1.562-1.562-4.095-1.562-5.657,0c-1.562,1.562-1.562,4.095,0,5.657L8,14.5l6.328-6.172C15.891,6.766,15.891,4.234,14.328,2.672z"></path></svg>
+            </button>
+          </div>
+        </div>
+  
+        <div class="tabs text-sm js-tabs">
+          <ul class="flex flex-wrap gap-sm js-tabs__controls" aria-label="Tabs Interface">
+            <li><a href="#proTabPanelDetails" class="tabs__control" aria-selected="true">Details</a></li>
+            <li><a href="#proTabPanelSizing" class="tabs__control">Sizing</a></li>
+            <li><a href="#proTabPanelShipping" class="tabs__control">Shipping &amp; Returns</a></li>
+          </ul>
+        
+          <div class="js-tabs__panels">
+            <section id="proTabPanelDetails" class="padding-top-sm js-tabs__panel">
+              <div class="text-component color-contrast-medium">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt reprehenderit voluptatibus expedita. Laboriosam maxime aut dolorem eum qui nemo! Ea!</p>
+              </div>
+            </section>
+        
+            <section id="proTabPanelSizing" class="padding-top-sm js-tabs__panel">
+              <div class="text-component color-contrast-medium">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, nobis! Vitae quis minus accusantium qui atque? Officiis sunt exercitationem natus, minus sapiente debitis eum animi porro. Ut cupiditate amet expedita!</p>
+              </div>
+            </section>
+        
+            <section id="proTabPanelShipping" class="padding-top-sm js-tabs__panel">
+              <div class="text-component color-contrast-medium">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, veritatis.</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--PRODUCT V2 END-->
+
+<!---TABS V2-STARTED-->
+<div class="tabs-v2 js-tabs">
+  <nav>
+    <ul class="tabs-nav-v2 js-tabs__controls js-tabs-nav-v2" aria-label='Tabs Interface'>
+      <li><a href="#tab2Panel1" class="tabs-nav-v2__item js-tab-focus" aria-selected="true">Tab 1</a></li>
+      <li><a href="#tab2Panel2" class="tabs-nav-v2__item js-tab-focus">Tab 2</a></li>
+      <li><a href="#tab2Panel3" class="tabs-nav-v2__item js-tab-focus">Tab 3</a></li>
+      <li><a href="#tab2Panel4" class="tabs-nav-v2__item js-tab-focus">Tab 4</a></li>
+      <li><a href="#tab2Panel5" class="tabs-nav-v2__item js-tab-focus">Tab 5</a></li>
+    </ul>
+  </nav>
+
+  <div class="js-tabs__panels">
+    <section id="tab2Panel1" class="padding-top-md js-tabs__panel">
+      <div class="text-component">
+        <h2>Panel 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt reprehenderit voluptatibus expedita. Laboriosam maxime aut dolorem eum qui nemo! Ea!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati natus totam assumenda cumque numquam culpa officia, harum vel quibusdam recusandae, blanditiis non quae pariatur? Laborum, animi dolor tempora laboriosam minus nulla sit, hic molestias velit delectus sint aspernatur possimus soluta?</p>
+      </div>
+    </section>
+
+    <section id="tab2Panel2" class="padding-top-md js-tabs__panel">
+      <div class="text-component">
+        <h2>Panel 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, nobis! Vitae quis minus accusantium qui atque? Officiis sunt exercitationem natus, minus sapiente debitis eum animi porro. Ut cupiditate amet expedita!</p>
+      </div>
+    </section>
+
+    <section id="tab2Panel3" class="padding-top-md js-tabs__panel">
+      <div class="text-component">
+        <h2>Panel 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, veritatis.</p>
+      </div>
+    </section>
+
+    <section id="tab2Panel4" class="padding-top-md js-tabs__panel">
+      <div class="text-component">
+        <h2>Panel 4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, ipsa. Maiores sit totam dignissimos perferendis recusandae quis eligendi quos expedita consequatur, natus debitis, deserunt placeat tenetur odit voluptates, ad nihil cum ipsa quae est facere, voluptate sapiente tempora a officiis. Ipsa perspiciatis aut commodi enim expedita. Saepe at cupiditate quaerat explicabo distinctio quae enim, ab impedit! Sunt, omnis, sit magnam id exercitationem mollitia alias pariatur doloremque nulla. Totam quis, animi minus error molestias sit. Quidem, dolor, aspernatur. Voluptates, magni, provident?</p>
+      </div>
+    </section>
+
+    <section id="tab2Panel5" class="padding-top-md js-tabs__panel">
+      <div class="text-component">
+        
+        <h2>Panel 5</h2> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam modi nesciunt eum, dolores corrupti labore assumenda vel? Cupiditate fugit nihil, sunt nulla nisi blanditiis quidem, eos nesciunt. Quidem dolorem laudantium, ex fuga natus nisi error architecto saepe sapiente dolores assumenda.</p>
+      </div>
+    </section>
+  </div>
+
+  
+</div>
+
+<!--TABS V2 END-->
+    
+    
+  </section>
+  
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

@@ -7,9 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link id="codyframe" rel="stylesheet" href="assets/css/style.css">
   <!-- Uncomment the script below if you need to support browsers where CSS Variables have not been implemented (e.g., IE11) -->
-  <!-- <script>
+  <script>
     if(!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) {var cfStyle = document.getElementById('codyframe');if(cfStyle) {var href = cfStyle.getAttribute('href');href = href.replace('style.css', 'style-fallback.css');cfStyle.setAttribute('href', href);}}
-  </script> -->
+  </script> 
   <title>Get Started | CodyFrame</title>
 </head>
 <body>
@@ -82,19 +82,47 @@
           <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellendus autem quas.</p>
         </div>
   
-        <div class="margin-bottom-sm">
-          <fieldset class="color-swatches  js-color-swatches">
-            <legend class="color-swatches__legend text-sm color-contrast-medium margin-bottom-xs" aria-live="polite" aria-atomic="true">Our Options<span class="color-swatches__color color-contrast-high js-color-swatches__color"></span></legend>
-  
-            <select class="js-color-swatches__select" aria-label="Select a color">
-              <option value="Black" data-style="background-color: #0D0E11;"></option>
-              <option value="White" data-style="background-color: #FFFFFF;"></option>
-              <option value="Red" data-style="background-color: #9C2822;"></option>
-              
-            </select>
+         <div class="margin-bottom-xs" > 
+          <fieldset>
+            <legend class="form-legend margin-bottom-xs">Select option:</legend>
+          
+            <div class="grid gap-sm js-choice-imgs" role="radiogroup">
+          
+              <div class="choice-img bg radius-md col-6@xs col-4@sm col-3@md js-choice-img js-tab-focus" role="radio" aria-checked="true" tabindex="0" aria-label="Option One">
+                <figure class="aspect-ratio-4:3">
+                  <img class="block width-100%" src="assets/img/meat.jpg" alt="Image description">
+                </figure>
+          
+                <div class="padding-sm text-component">
+                  <h4 class="text-base">Box</h4>
+                  <p class="text-sm color-contrast-medium">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+          
+                <div class="choice-img__input" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 16 16">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 8l4 4 8-8" /></svg>
+                </div>
+              </div>
+          
+              <div class="choice-img bg radius-md col-6@xs col-4@sm col-3@md js-choice-img js-tab-focus" role="radio" aria-checked="false" tabindex="0" aria-label="Option Two">
+                <figure class="aspect-ratio-4:3">
+                  <img class="block width-100%" src="assets/img/meat.jpg" alt="Image description">
+                </figure>
+          
+                <div class="padding-sm text-component">
+                  <h4 class="text-base">Indiv</h4>
+                  <p class="text-sm color-contrast-medium">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+          
+                <div class="choice-img__input" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 16 16">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 8l4 4 8-8" /></svg>
+                </div>
+              </div> 
+              </div>
+             </div>  
           </fieldset>
-        </div>
-  
+         
         <div class="margin-bottom-md">
           <p class="text-sm color-contrast-medium margin-bottom-xs">Weight</p>
           
@@ -118,7 +146,20 @@
               <input type="radio" name="sizeBtns" id="sizeBtnsXL" disabled>
               <label class="btns__btn btns__btn--disabled" for="sizeBtnsXL">00.0 lbs</label>
             </div>
+            
           </div>
+        
+        </div>
+        <div>
+          <label for="qty">QTY</label>
+
+          <input type="text" id="qty" name="qty" 
+                 minlength="4" maxlength="8" size="10">
+        </div>
+
+        <div>
+          <input type="checkbox" id="gift" name="giftwrap">
+          <label for="gift">Wrap it as a gift</label>
         </div>
   
         <div class="margin-bottom-md">
@@ -160,6 +201,7 @@
         </div>
       </div>
     </div>
+  </div>
      <!--PRODUCT V2 END-->
 
 <!---TABS V2-STARTED-->
@@ -206,16 +248,12 @@
 
     <section id="tab2Panel5" class="padding-top-md js-tabs__panel">
       <div class="text-component">
-        
-        <h2>Panel 5</h2> 
+        <h2>Panel 5</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam modi nesciunt eum, dolores corrupti labore assumenda vel? Cupiditate fugit nihil, sunt nulla nisi blanditiis quidem, eos nesciunt. Quidem dolorem laudantium, ex fuga natus nisi error architecto saepe sapiente dolores assumenda.</p>
       </div>
     </section>
   </div>
-
-  
 </div>
-
 <!--TABS V2 END-->
     
     

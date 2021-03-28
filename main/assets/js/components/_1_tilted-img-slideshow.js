@@ -21,31 +21,31 @@
         Util.addClass(slideshow.element, slideshow.interactedClass);
         animateImgs ? animateImages(slideshow) : switchImages(slideshow);
       });
-    };
+    }
   
     function removeTransitions(slideshow) {
       // if reduced motion is on or css variables are not supported -> do not animate images
       for(var i = 0; i < slideshow.images.length; i++) {
         slideshow.images[i].style.transition = 'none';
       }
-    };
+    }
   
     function switchImages(slideshow) {
       // if reduced motion is on or css variables are not supported -> switch images without animation
       resetOrderClasses(slideshow);
       resetSelectedIndex(slideshow);
-    };
+    }
   
     function resetSelectedIndex(slideshow) {
       // update the index of the top image
       slideshow.selectedIndex = resetIndex(slideshow, slideshow.selectedIndex + 1);
-    };
+    }
   
     function resetIndex(slideshow, index) {
       // make sure index is < 3
       if(index >= slideshow.images.length) index = index - slideshow.images.length;
       return index;
-    };
+    }
   
     function resetOrderClasses(slideshow) {
       // update the orderClasses for each images
@@ -64,7 +64,7 @@
       var bottomImage = slideshow.images[resetIndex(slideshow, slideshow.selectedIndex + 2)];
       Util.addClass(bottomImage, slideshow.orderClasses[1]);
       Util.removeClass(bottomImage, slideshow.orderClasses[2]);
-    };
+    }
   
     function animateImages(slideshow) {
       if(slideshow.animating) return;
@@ -101,7 +101,7 @@
           }, 10);
         }, 10);
       });
-    };
+    }
   
     var tiltedSlideshow = document.getElementsByClassName('js-tilted-slideshow'),
       animateImgs = !Util.osHasReducedMotion() && ('CSS' in window) && CSS.supports('color', 'var(--color-var)');

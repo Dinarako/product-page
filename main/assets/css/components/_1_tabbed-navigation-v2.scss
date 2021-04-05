@@ -8,10 +8,10 @@ Usage: codyhouse.co/license
 -------------------------------- */
 
 .tabs-nav-v2 {
-  --tabs-nav-border-width: 2px;
+ 
   display: flex;
   flex-wrap: wrap;
-  border-bottom: var(--tabs-nav-border-width) solid var(--color-contrast-low);
+  //border-bottom: var(--tabs-nav-border-width) solid var(--color-contrast-low);
 
   li {
     display: inline-block; // flexbox fallback
@@ -27,6 +27,11 @@ Usage: codyhouse.co/license
   background-color: var(--color-contrast-low);
   color: inherit;
   white-space: nowrap;
+
+  &:hover {
+    background-color: var(--color-primary-light);
+    text-decoration: underline;
+  }
 }
 
 .tabs-nav-v2__item--selected,
@@ -49,7 +54,7 @@ Usage: codyhouse.co/license
     border-bottom-width: 0;
 
     &:hover {
-      background-color: var(--color-contrast-lower);
+      background-color: var(--color-primary-light);
     }
   }
 
@@ -71,7 +76,7 @@ Usage: codyhouse.co/license
     }
 
     &:hover {
-      background-color: var(--color-bg);
+      background-color: var(--color-primary-light);
     }
   }
 }

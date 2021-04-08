@@ -7,25 +7,25 @@ Usage: codyhouse.co/license
 
 -------------------------------- */
 
-.tabs {}
+// .tabs {}
 
-.tabs__control {
-  text-decoration: none;
-  color: var(--color-contrast-medium);
+// .tabs__control {
+//   text-decoration: none;
+//   color: var(--color-contrast-medium);
 
-  &:focus {
-    outline: 2px solid alpha(var(--color-primary), 0.2);
-    outline-offset: 2px;
-  }
+//   &:focus {
+//     outline: 2px solid alpha(var(--color-primary), 0.2);
+//     outline-offset: 2px;
+//   }
 
-  &:hover {
-    color: var(--color-contrast-high);
-  }
-}
+//   &:hover {
+//     color: var(--color-contrast-high);
+//   }
+// }
 
-.js {
-  .tabs__control[aria-selected="true"] {
-    color: var(--color-contrast-high);
-    text-decoration: underline;
-  }
-}
+// .js {
+//   .tabs__control[aria-selected="true"] {
+//     color: var(--color-contrast-high);
+//     //text-decoration: underline;
+//   }
+// }

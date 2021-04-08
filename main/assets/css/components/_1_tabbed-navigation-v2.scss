@@ -7,48 +7,108 @@ Usage: codyhouse.co/license
 
 -------------------------------- */
 
-.tabs-nav-v2 {
+//.tabs-nav-v2 {
  
-  display: flex;
-  flex-wrap: wrap;
+ // display: flex;
+  //flex-wrap: wrap;
   //border-bottom: var(--tabs-nav-border-width) solid var(--color-contrast-low);
 
-  li {
-    display: inline-block; // flexbox fallback
-    margin-right: var(--space-md);
-    margin-bottom: var(--space-md);    
-  }
-}
+//   li {
+//     display: inline-block; // flexbox fallback
+//     margin-right: var(--space-md);
+//     margin-bottom: var(--space-md);    
+//   }
+// }
 
-.tabs-nav-v2__item {
-  display: inline-block;
-  padding: var(--space-xs) var(--space-sm);
-  border-radius: var(--radius-md);
-  //background-color: var(--color-contrast-low);
-  color: inherit;
-  white-space: nowrap;
-  text-decoration: none;
+// .tabs-nav-v2__item {
+//   display: inline-block;
+//   padding: var(--space-xs) var(--space-sm);
+//   border-radius: var(--radius-md);
+//   //background-color: var(--color-contrast-low);
+//   color: inherit;
+//   white-space: nowrap;
+//   text-decoration: none;
 
 
-  &:hover {
-    color: var(--color-primary-light);
-    text-decoration: underline;
-    -webkit-text-underline-position: under;
-    -ms-text-underline-position: under;
-    text-underline-position: under;   
-  }
-}
+//   &:hover {
+//     color: var(--color-primary-light);
+//     text-decoration: underline;
+//     -webkit-text-underline-position: under;
+//     -ms-text-underline-position: under;
+//     text-underline-position: under;   
+//   }
+// }
 
-.tabs-nav-v2__item--selected,
-.tabs-nav-v2__item[aria-selected="true"] {
-  color: var(--color-accent-darker);
-  //background-color: var(--color-contrast-higher);
-  text-decoration: underline;
-  -webkit-text-underline-position: under;
-  -ms-text-underline-position: under;
-  text-underline-position: under;
+// .tabs-nav-v2__item--selected,
+// .tabs-nav-v2__item[aria-selected="true"] {
+//   color: var(--color-accent-darker);
+//   //background-color: var(--color-contrast-higher);
+//   text-decoration: underline;
+//   -webkit-text-underline-position: under;
+//   -ms-text-underline-position: under;
+//   text-underline-position: under;
  
+// }
+
+//ANIMATED UNDERLINE  CODE START
+
+h6 {
+  margin-bottom: 0;
 }
+
+ul { 
+  margin: auto 45px;  
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 800px;
+  text-align: left; 
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+
+a.cat:link {
+  color: var(--color-primary);
+  //text-transform: uppercase;
+  text-decoration: none;
+  //letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.cat h6:hover {
+  color: var(--color-accent-dark);
+}
+
+a.cat:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-accent-dark);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a.cat:hover:after { 
+  width: 100%; 
+  left: 0; 
+  
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+
+
 //////////uncoment above
 
 // @include breakpoint(md) {
